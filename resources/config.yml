@@ -12,9 +12,13 @@ rule2: "Example"
 rule3: "Example"
 rule4: "Example"
 rule5: "Example"
-rule6: "Example"
-rule7: "Example"
-rule8: "Example"
+
+ruleother1: false
+ruleothermessage1: "Example"
+ruleother2: false
+ruleothermessage2: "Example"
+ruleother3: false
+ruleothermessage3: "Example"
 #Please do not add more rule slots!
 #It may corrupt the config file!
 ...
