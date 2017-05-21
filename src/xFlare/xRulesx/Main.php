@@ -1,6 +1,5 @@
-<?php
+                                                <?php
 namespace xFlare\xRulesx;
-
 use pocketmine\utils\TextFormat;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -8,7 +7,6 @@ use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\Player;
-
 class Main extends PluginBase implements Listener{
 	public function onEnable(){
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -63,32 +61,13 @@ class Main extends PluginBase implements Listener{
                     $sender->sendMessage("- " . $this->getConfig()->get("rule3"));
                     $sender->sendMessage("- " . $this->getConfig()->get("rule4"));
                     $sender->sendMessage("- " . $this->getConfig()->get("rule5"));
-                    if($this->getConfigValue("ruleother1") === true)
-        {
+                   
            $sender->sendMessage(TEXTFORMAT::RED . "- " . $this->getConfig()->get("ruleothermessage1"));
-        }
-        else
-        {
-          $this->getLogger()->info(TEXTFORMAT::AQUA.  " Ignoring other rule 1");  
-        }
-			
-				if($this->getConfigValue("ruleother2") === true)
-        {
+      
            $sender->sendMessage(TEXTFORMAT::RED . "- " . $this->getConfig()->get("ruleothermessage2"));
-        }
-        else
-        {
-          $this->getLogger()->info(TEXTFORMAT::AQUA.  " Ignoring other rule 2");  
-        }
-			
-				if($this->getConfigValue("ruleother3") === true)
-        {
+      
            $sender->sendMessage(TEXTFORMAT::RED . "- " . $this->getConfig()->get("ruleothermessage3"));
-        }
-        else
-        {
-          $this->getLogger()->info(TEXTFORMAT::AQUA.  " Ignoring other rule 3");  
-        }
+  
                     return true;
                 }
                 break;
