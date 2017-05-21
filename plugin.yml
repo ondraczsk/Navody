@@ -1,15 +1,15 @@
 name: xRulesx
-description: Allows users to view all rules with /rules
+description: Allows users to view all rules with /pravidla
 author: xFlare
 main: xFlare\xRulesx\Main
 load: POSTWORLD
 version: 1.0.0
 api: [1.8.0]
 commands:
-    rules:
-        usage: /rules
-        description: Shows a list of rules.
+    pravidla:
+        usage: /pravidla
+        description: Ukaze pravidla
 permissions:
-    xflare.rules:
+    xflare.pravidla:
         default: true
-        description: Allows user to use /rules
+        description: Povolení na /pravidla
